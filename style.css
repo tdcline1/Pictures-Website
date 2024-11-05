@@ -14,7 +14,7 @@ path:hover {
 }
 
 /* establish starting size of map */
-#us-map {
+#euro-map {
     display: block;
     position: absolute;
     top: 0;
