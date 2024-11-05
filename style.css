@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* establish map color and line color */
 path {
     stroke: white;
     fill:paleturquoise !important;
@@ -7,10 +8,12 @@ path {
     transition: fill .4s ease;
 }
 
+/* establish map hover characteristics*/
 path:hover {
     fill: orange !important;
 }
 
+/* establish starting size of map */
 #us-map {
     display: block;
     position: absolute;
@@ -20,6 +23,7 @@ path:hover {
     height: 100%;
 }
 
+/* changes location of state name from top left of map to box under cursor */
 #details-box {
     padding: 1rem;
     border-radius: 8px;
