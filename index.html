@@ -14,6 +14,28 @@
 <body>
     <div id="details-box"></div>
 
+    <script>
+        var tooltipSpan = document.getElementById('details-box');
+
+        document.addEventListener('mouseover', function (e) {
+            if (e.target.tagName == 'path') {
+                var content = e.target.dataset.name;
+                document.getElementById("details-box").innerHTML = content;
+                document.getElementById("details-box").style.opacity = "100%";
+            }
+            else {
+                document.getElementById("details-box").style.opacity = "0%";
+            }
+        });
+
+        window.onmousemove = function (e) {
+            var x = e.clientX,
+                y = e.clientY;
+            tooltipSpan.style.top = (y + 20) + 'px';
+            tooltipSpan.style.left = (x) + 'px';
+        };
+    </script>
+
     <!-- load map -->
     <!-- <?xml version="1.0"?> -->
     <svg baseprofile="tiny" fill="#ececec" height="684" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".1" version="1.2" viewbox="0 0 1000 684" width="1000" xmlns="http://www.w3.org/2000/svg">
