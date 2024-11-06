@@ -39,6 +39,6 @@ path:hover {
     z-index: 1;
 }
 
-#iceland, #sweden {
+#iceland, #sweden, #belarus, #Ukraine, #Bulgaria, #Moldova{
     fill: rgb(190, 138, 138);
   }
