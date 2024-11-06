@@ -3,7 +3,7 @@
 /* Navigation Bar */
 
 #home {
-    background-color:  #7600bc;
+    background-color:  #000000;
     padding-bottom: 1cm;
     margin-left:-1cm;
     margin-right:-1cm;
@@ -33,7 +33,7 @@
   }
   
   .profile_name {
-      color: aqua;
+      color: lightgray;
       font-size: 30px;
       float: left;
       padding-left: 2cm;
@@ -60,7 +60,7 @@
     font-size: 50px;
     text-align: center;
     float: left;
-    color: #7600bc;
+    color: #004ebc;
     margin: 30px;
     margin-left: 60px;
     margin-top: 40px;
