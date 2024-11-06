@@ -3,7 +3,7 @@
 /* establish map color and line color */
 path {
     stroke: white;
-    stroke-width: 2px;
+    stroke-width: 1px;
     fill:paleturquoise !important;
 
     transition: fill .4s ease;
