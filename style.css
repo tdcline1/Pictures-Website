@@ -41,6 +41,35 @@ path:hover {
     z-index: 1;
 }
 
-#iceland #sweden #belarus #ukraine #Bulgaria #Moldova #Bosnia-and-Herzegovina #Croatia{
+/* fading countries ive never been */
+#iceland{
+    fill: rgb(190, 138, 138);
+  } 
+
+#sweden{
+    fill: rgb(190, 138, 138);
+  } 
+
+#belarus{
+    fill: rgb(190, 138, 138);
+  } 
+
+#ukraine{
+    fill: rgb(190, 138, 138);
+  }
+
+#Bulgaria {
+    fill: rgb(190, 138, 138);
+  }
+
+#Moldova{
+    fill: rgb(190, 138, 138);
+  } 
+
+#Bosnia-and-Herzegovina {
+    fill: rgb(190, 138, 138);
+  }
+
+#Croatia{
     fill: rgb(190, 138, 138);
   }
