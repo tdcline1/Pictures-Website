@@ -3,7 +3,7 @@
 /* Navigation Bar */
 
 #home {
-    background-color:  #000000;
+    background-color:  darkblue;
     padding-bottom: 1cm;
     margin-left:-1cm;
     margin-right:-1cm;
@@ -94,7 +94,7 @@
   #about-me h1 {
     font-size: 65px;
     margin-top: 90px;
-    color: #7600bc;
+    color: darkblue;
   }
   
   #about-me p {
