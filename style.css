@@ -154,37 +154,69 @@ path:hover {
 }
 
 /* fading countries ive never been */
-#iceland{
+#AD{
     fill: rgb(190, 138, 138);
   } 
 
-#sweden{
+#AM{
     fill: rgb(190, 138, 138);
   } 
 
-#belarus{
+#BA{
     fill: rgb(190, 138, 138);
   } 
 
-#ukraine{
+#BY{
     fill: rgb(190, 138, 138);
   }
 
-#BG {
+#GE {
     fill: rgb(190, 138, 138);
   }
 
-#Moldova{
+#HR{
     fill: rgb(190, 138, 138);
   } 
 
-#Bosnia-and-Herzegovina {
+#LU {
     fill: rgb(190, 138, 138);
   }
 
-#Croatia{
+#MD{
     fill: rgb(190, 138, 138);
-  }
+}
+
+#MK{
+  fill: rgb(190, 138, 138);
+}
+
+#ME{
+  fill: rgb(190, 138, 138);
+}
+
+#RS{
+  fill: rgb(190, 138, 138);
+}
+
+#SK{
+  fill: rgb(190, 138, 138);
+}
+
+#SE{
+  fill: rgb(190, 138, 138);
+}
+
+#UA{
+  fill: rgb(190, 138, 138);
+}
+
+#XK{
+  fill: rgb(190, 138, 138);
+}
+
+#CY{
+  fill: rgb(190, 138, 138);
+}
 
   /* Scroll to Top Button */
 
