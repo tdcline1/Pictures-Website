@@ -137,6 +137,10 @@ path:hover {
     height: 100%;
 }
 */
+#euro-map {
+  display: block;
+  position: center;
+}
 
 /* changes location of state name from top left of map to box under cursor */
 #details-box {
