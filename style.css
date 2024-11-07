@@ -154,6 +154,10 @@ path:hover {
 }
 
 /* fading countries ive never been */
+#AL{
+  fill: rgb(190, 138, 138);
+} 
+
 #AD{
     fill: rgb(190, 138, 138);
   } 
