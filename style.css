@@ -12,6 +12,10 @@
     padding-bottom: 2cm;
     height: 5mm;
    }
+
+section {
+  width: 100%;
+}
   
   .topmenu {
     color: lightgray;
