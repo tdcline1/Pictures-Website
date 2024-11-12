@@ -89,7 +89,6 @@ section {
     width: 100%; 
   }
 
-  
   /* About Me Section */
 #about-me {
   display: flex;
@@ -100,46 +99,60 @@ section {
   box-sizing: border-box;
 }
 
-/* Image Container */
 .about-me-image {
-  flex: 1; /* Makes each image take equal space */
-  max-width: 33%; /* Makes sure the images don't take too much space */
+  flex: 1;
+  max-width: 33%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Text Container */
 .about-me-text {
-  flex: 2; /* Text takes up more space than the images */
+  flex: 2;
   max-width: 34%;
   padding: 20px;
   text-align: center;
 }
 
-/* Ensure images are responsive */
 .about-me-image img {
-  width: 100%; /* Makes images responsive */
+  width: 100%;
   height: auto;
-  object-fit: cover; /* Ensures images do not stretch or distort */
+  object-fit: cover;
 }
 
-/* Responsive Adjustments */
+/* Map Styles */
+.map-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  clear: both; /* Ensure no floats affect it */
+}
+
+#euro-map {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   #about-me {
-    flex-direction: column; /* Stack images and text vertically on small screens */
+    flex-direction: column;
     text-align: center;
   }
 
   .about-me-image {
-    max-width: 90%; /* Make images take up more width on small screens */
+    max-width: 90%;
     margin-bottom: 20px;
   }
 
   .about-me-text {
-    max-width: 90%; /* Make text take up more width on small screens */
+    max-width: 90%;
     margin-bottom: 20px;
   }
+}
   
   .profile_image {
     /* width: 550px; */
