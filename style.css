@@ -407,17 +407,18 @@ path:hover {
 .gallery-header {
   display: flex;
   flex-direction: column; /* Stack items vertically */
-  align-items: center;    /* Center align items horizontally */
-  margin-bottom: 20px;    /* Adjust spacing below the title */
+  align-items: center;    /* Center-align the text */
+  text-align: center;     /* Center-align text within each item */
+  margin-bottom: 20px;    /* Space below the whole header */
 }
 
-.main-title {
+.gallery-title {
   font-size: 2em;         /* Adjust size as needed */
-  margin: 0;
+  margin: 0;              /* Remove extra spacing around the title */
 }
 
-.description {
-  font-size: 1em;         /* Adjust size as needed */
-  color: gray;            /* Optional: make the description color different */
-  margin: 0;
+.gallery-description {
+  font-size: 1em;         /* Adjust description size as needed */
+  color: gray;            /* Optional: differentiate color */
+  margin-top: 5px;        /* Space between title and description */
 }
