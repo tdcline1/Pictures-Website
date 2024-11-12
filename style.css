@@ -88,25 +88,57 @@ section {
     display: flex;
     width: 100%; 
   }
+
   
-  /* About Me */
-  
-  .about-me {
-    display: flex;
-    align-items: center;
-  }
-  
-  #about-me h1 {
-    font-size: 65px;
-    margin-top: 90px;
-    color: darkblue;
-  }
-  
-  #about-me p {
-    font-size: 25px;
-    color: rgb(85, 94, 197);
-    margin-top: -1cm;
+  /* About Me Section */
+#about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Image Container */
+.about-me-image {
+  flex: 1; /* Makes each image take equal space */
+  max-width: 33%; /* Makes sure the images don't take too much space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text Container */
+.about-me-text {
+  flex: 2; /* Text takes up more space than the images */
+  max-width: 34%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Ensure images are responsive */
+.about-me-image img {
+  width: 100%; /* Makes images responsive */
+  height: auto;
+  object-fit: cover; /* Ensures images do not stretch or distort */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #about-me {
+    flex-direction: column; /* Stack images and text vertically on small screens */
     text-align: center;
+  }
+
+  .about-me-image {
+    max-width: 90%; /* Make images take up more width on small screens */
+    margin-bottom: 20px;
+  }
+
+  .about-me-text {
+    max-width: 90%; /* Make text take up more width on small screens */
+    margin-bottom: 20px;
   }
   
   .profile_image {
