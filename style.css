@@ -2,7 +2,7 @@
 
 /* Navigation Bar */
 
-#home {
+/*#home {
     background-color:  darkblue;
     padding-bottom: 1cm;
     margin-left:-1cm;
@@ -12,11 +12,110 @@
     padding-bottom: 2cm;
     height: 5mm;
    }
-
+    */
+    #home {
+      background-color: darkblue;
+      padding: 2cm;
+      margin: 0;
+      height: auto;
+  }
+  
+  .topdiv {
+      float: right;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  }
+  
+  .topmenu {
+      color: lightgray;
+      margin: 10px;
+      padding: 10px;
+      font-size: 20px;
+      text-decoration: none;
+  }
+  
+  .topmenu:hover {
+      color: white;
+      font-weight: bolder;
+      text-decoration: underline;
+  }
+  
+  .profile_name {
+      color: lightgray;
+      font-size: 30px;
+      padding-left: 2cm;
+      padding-top: 1cm;
+  }
+  
+  .profile_name .contact_info {
+      font-size: 15px;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+  }
+  
+  /* Hamburger Menu */
+  .menu-toggle {
+      display: none; /* Hide by default */
+      cursor: pointer;
+      z-index: 10;
+  }
+  
+  #home .topdiv a {
+      display: block;
+      padding: 10px;
+      font-size: 20px;
+  }
+  
+  /* Media Query for smaller screens (Mobile) */
+  @media (max-width: 768px) {
+      #home {
+          padding: 1cm;
+      }
+  
+      /* Hide the navigation links and show the hamburger icon */
+      .topdiv {
+          display: none;  /* Hide the navigation links */
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          margin-top: 10px;
+      }
+  
+      .topdiv a {
+          text-align: center;
+          padding: 12px;
+          font-size: 18px;
+      }
+  
+      /* Show the hamburger icon on small screens */
+      .menu-toggle {
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+      }
+  
+      /* Show the navigation links when hamburger is clicked */
+      .topdiv.open {
+          display: flex;
+      }
+  }
+  
+  /* Adjust profile name text and topdiv for mobile */
+  @media (max-width: 768px) {
+      .profile_name {
+          font-size: 25px;
+          padding-left: 0;
+          text-align: center;
+      }
+  }
 section {
   width: 100%;
 }
-  
+  /*
   .topmenu {
     color: lightgray;
     margin: 10px;
@@ -56,7 +155,8 @@ section {
     margin-right: 10px;
     float:left;
   }
-  
+  */
+
   /* Titles */
   
   h2 {
