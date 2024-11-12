@@ -110,13 +110,14 @@ section {
   }
   
   .profile_image {
-    width: 550px;
+    /* width: 550px; */
+    max-width: 100%;
+    height: auto;
     height: fit-content;
     vertical-align: middle;
     horizontal-align: middle;
     margin: 5px;
-  }
-  
+
   
 
 /* establish map color and line color */
