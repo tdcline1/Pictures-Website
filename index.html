@@ -149,6 +149,15 @@
             tooltipSpan.style.top = (y + 20) + 'px';
             tooltipSpan.style.left = (x) + 'px';
         };
+
+            // Select the menu toggle and the navigation div... make the nav bar scalable
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.topdiv');
+
+    // Add a click event to toggle the 'open' class
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
     </script>
 
     <!-- load map -->
