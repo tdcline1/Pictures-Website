@@ -85,7 +85,7 @@ section {
   /* Used in the About Me sections */
   
   .container {
-    display: flex;
+    /* display: flex; */
     width: 100%; 
   }
   
