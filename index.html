@@ -233,6 +233,8 @@ function myFunction(imgs) {
     containerId = "norwaycontainer";
   } else if (imgs.src.includes("Italy")) {
     containerId = "italycontainer";
+  } else if (imgs.src.includes("England")) {
+    containerId = "englandcontainer";
   }
 
   var container = document.getElementById(containerId);
@@ -471,6 +473,34 @@ function myFunction(imgs) {
 </div>
 
 <div id="italycontainer" class="container2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+ <!-- England Gallery -->
+ <div class="gallery-header" style="text-align:center; clear: both;">
+  <h2 id="italy" class="gallery-title">England</h2>
+  <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row2">
+  <div class="column2">
+    <img src="Reference Pictures/England/westminster.jpg" alt="Westminster Abbey" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/England/wales castle.jpg" alt="Welsh Castle 1300s" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/England/hs2.jpg" alt="My former job- high speed rail bridge construction engineering" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/England/snowdon.jpeg" alt="Sheep! on the tallest mtn in Wales (Snowdon). View of Atlantic ocean." style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div id="englandcontainer" class="container2">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
