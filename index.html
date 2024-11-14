@@ -217,12 +217,24 @@
     });
 
     //galleries norway functions js
-    function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
+ //   function myFunction(imgs) {
+ // var expandImg = document.getElementById("expandedImg");
+ // var imgText = document.getElementById("imgtext");
+ // expandImg.src = imgs.src;
+ // imgText.innerHTML = imgs.alt;
+ // expandImg.parentElement.style.display = "block";
+}
+
+function expandImage(img, containerId) {
+    // Get the specific container for the selected gallery
+    const container = document.getElementById(containerId);
+    const expandedImg = container.querySelector('#expandedImg');
+    const imgText = container.querySelector('#imgtext');
+
+    // Set the image and text in the specified container
+    expandedImg.src = img.src;
+    imgText.innerHTML = img.alt;
+    container.style.display = 'block';
 }
 
     </script>
@@ -422,7 +434,7 @@
   </div>
 </div>
 
-<div class="container2">
+<div id="norwaycontainer" class="container2">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
@@ -432,7 +444,7 @@
  <!-- Italy -->
 <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="italy" class="gallery-title">Italy</h2>
-  <p class="gallery-description">Click on an image to see it in full screen below:</p>
+  <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
 </div>
 
 <br><br>
@@ -453,7 +465,7 @@
   </div>
 </div>
 
-<div class="container2">
+<div id="italycontainer" class="container2">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
