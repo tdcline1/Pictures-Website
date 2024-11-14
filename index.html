@@ -235,6 +235,8 @@ function myFunction(imgs) {
     containerId = "italycontainer";
   } else if (imgs.src.includes("England")) {
     containerId = "englandcontainer";
+  } else if (imgs.src.includes("Alta Via 1")) {
+    containerId = "altavia1container";
   }
 
   var container = document.getElementById(containerId);
@@ -473,6 +475,34 @@ function myFunction(imgs) {
 </div>
 
 <div id="italycontainer" class="container2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+ <!-- Alta Via 1 -->
+ <div class="gallery-header" style="text-align:center; clear: both;">
+  <h2 id="italy" class="gallery-title">Alta Via 1- Italian Dolomites</h2>
+  <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row2">
+  <div class="column2">
+    <img src="Reference Pictures/Alta Via 1/Braes.jpg" alt="Lake Braies" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Alta Via 1/Beer.jpg" alt="Rifugio life! Post hike beer" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Alta Via 1/laga.jpg" alt="Lagazuoi Peak" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Alta Via 1/Alta Via 1 Best.jpg" alt="Classic Dolomite View" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div id="altavia1container" class="container2">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
