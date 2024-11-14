@@ -85,29 +85,31 @@
 
 /* The expanding image container */
 .container2 {
-  position: relative;
-  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
-  background-color: #000;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
 }
 
 .expandedImg {
-  width: 100%;
-  height: auto;
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
 }
 
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
+.imgtext {
   color: white;
+  margin-top: 10px;
   font-size: 20px;
 }
 
-/* Closable button inside the expanded image */
 .closebtn {
   position: absolute;
   top: 10px;
@@ -235,21 +237,20 @@
 }
 
 function expandImage(img, containerId) {
-    // Locate the specific container for the selected gallery
     const container = document.getElementById(containerId);
-    const expandedImg = container.querySelector(".expandedImg");  // Select based on class
-    const imgText = container.querySelector(".imgtext");          // Select based on class
+    const expandedImg = container.querySelector(".expandedImg");
+    const imgText = container.querySelector(".imgtext");
 
-    // Set the image and text in the specified container
+    // Set image source and description
     expandedImg.src = img.src;
     imgText.innerHTML = img.alt;
 
-    // Display the container
+    // Show container
     container.style.display = 'block';
 }
 
 function closeExpandContainer(containerId) {
-    // Hide the specific container
+    // Hide the specific container when close button is clicked
     document.getElementById(containerId).style.display = 'none';
 }
 
