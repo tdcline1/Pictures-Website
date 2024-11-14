@@ -237,6 +237,8 @@ function myFunction(imgs) {
     containerId = "englandcontainer";
   } else if (imgs.src.includes("Alta Via 1")) {
     containerId = "altavia1container";
+  } else if (imgs.src.includes("Tour Du Mt Blanc")) {
+    containerId = "tourdumtblanccontainer";
   }
 
   var container = document.getElementById(containerId);
@@ -423,6 +425,34 @@ function myFunction(imgs) {
 
 
 <!-- start of individual picture galleries-->
+  <!-- Norway-->
+<div class="gallery-header" style="text-align:center; clear: both;">
+  <h2 id="tourdumtblanc" class="gallery-title">Tour Du Mt Blanc- Chamonix, France</h2>
+  <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row2">
+  <div class="column2">
+    <img src="Reference Pictures/Tour Du Mt Blanc/ice mt blanc massif.jpg" alt="On top of the Mt Blanc massif" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Tour Du Mt Blanc/beer.jpg" alt="Celebration beer post completion" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Tour Du Mt Blanc/chamonix.jpg" alt="Downtown Chamonix" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Tour Du Mt Blanc/glacial canyon.jpg" alt="Epic glacial canyon- Mer de Glace (Sea of Ice)" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div id="tourdumtblanccontainer" class="container2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
  <!-- Norway-->
 <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="norway" class="gallery-title">Norway</h2>
