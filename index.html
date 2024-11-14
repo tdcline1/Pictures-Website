@@ -226,15 +226,22 @@
 }
 
 function expandImage(img, containerId) {
-    // Get the specific container for the selected gallery
+    // Locate the specific container for the selected gallery
     const container = document.getElementById(containerId);
-    const expandedImg = container.querySelector(".expandedImg");  // Selecting based on class
-    const imgText = container.querySelector(".imgtext");          // Selecting based on class
+    const expandedImg = container.querySelector(".expandedImg");  // Select based on class
+    const imgText = container.querySelector(".imgtext");          // Select based on class
 
     // Set the image and text in the specified container
     expandedImg.src = img.src;
     imgText.innerHTML = img.alt;
+
+    // Display the container
     container.style.display = 'block';
+}
+
+function closeExpandContainer(containerId) {
+    // Hide the specific container
+    document.getElementById(containerId).style.display = 'none';
 }
 
     </script>
@@ -435,7 +442,7 @@ function expandImage(img, containerId) {
 </div>
 
 <div id="norwayContainer" class="container2">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <span onclick="closeExpandContainer('norwayContainer')" class="closebtn">&times;</span>
   <img class="expandedImg" id="expandedImgNorway" style="width:100%">
   <div id="imgtextNorway" class="imgtext"></div>
 </div>
@@ -464,7 +471,7 @@ function expandImage(img, containerId) {
 
 
 <div id="italyContainer" class="container2">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <span onclick="closeExpandContainer('italyContainer')" class="closebtn">&times;</span>
   <img class="expandedImg" id="expandedImgItaly" style="width:100%">
   <div id="imgtextItaly" class="imgtext"></div>
 </div>
