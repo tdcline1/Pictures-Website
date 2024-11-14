@@ -228,8 +228,8 @@
 function expandImage(img, containerId) {
     // Get the specific container for the selected gallery
     const container = document.getElementById(containerId);
-    const expandedImg = container.querySelector(`#expandedImg${containerId.replace('Container', '')}`);
-    const imgText = container.querySelector(`#imgtext${containerId.replace('Container', '')}`);
+    const expandedImg = container.querySelector(`#expandedImg${containerId.charAt(0).toUpperCase() + containerId.slice(1).replace('Container', '')}`);
+    const imgText = container.querySelector(`#imgtext${containerId.charAt(0).toUpperCase() + containerId.slice(1).replace('Container', '')}`);
 
     // Set the image and text in the specified container
     expandedImg.src = img.src;
@@ -434,7 +434,7 @@ function expandImage(img, containerId) {
   </div>
 </div>
 
-<div id="norwayContainer" class="container2">
+<div id="norwayContainer" class="container2" style="display: none;">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImgNorway" style="width:100%">
   <div id="imgtextNorway"></div>
@@ -462,7 +462,7 @@ function expandImage(img, containerId) {
   </div>
 </div>
 
-<div id="italyContainer" class="container2">
+<div id="italyContainer" class="container2" style="display: none;">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImgItaly" style="width:100%">
   <div id="imgtextItaly"></div>
