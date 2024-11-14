@@ -228,8 +228,8 @@
 function expandImage(img, containerId) {
     // Get the specific container for the selected gallery
     const container = document.getElementById(containerId);
-    const expandedImg = container.querySelector('#expandedImg');
-    const imgText = container.querySelector('#imgtext');
+    const expandedImg = container.querySelector(`#expandedImg${containerId.replace('Container', '')}`);
+    const imgText = container.querySelector(`#imgtext${containerId.replace('Container', '')}`);
 
     // Set the image and text in the specified container
     expandedImg.src = img.src;
@@ -412,7 +412,7 @@ function expandImage(img, containerId) {
 
 
 <!-- start of individual picture galleries-->
- <!-- Norway-->
+<!-- Norway Gallery -->
 <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="norway" class="gallery-title">Norway</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -436,18 +436,15 @@ function expandImage(img, containerId) {
 
 <div id="norwayContainer" class="container2">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%">
-  <div id="imgtext"></div>
+  <img id="expandedImgNorway" style="width:100%">
+  <div id="imgtextNorway"></div>
 </div>
 
-
- <!-- Italy -->
+<!-- Italy Gallery -->
 <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="italy" class="gallery-title">Italy</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
 </div>
-
-<br><br>
 
 <!-- The four columns -->
 <div class="row2">
@@ -467,8 +464,8 @@ function expandImage(img, containerId) {
 
 <div id="italyContainer" class="container2">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%">
-  <div id="imgtext"></div>
+  <img id="expandedImgItaly" style="width:100%">
+  <div id="imgtextItaly"></div>
 </div>
 
 </body>
