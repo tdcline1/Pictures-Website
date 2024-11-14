@@ -217,12 +217,31 @@
     });
 
     //galleries norway functions js
-    function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
+//    function myFunction(imgs) {
+//  var expandImg = document.getElementById("expandedImg");
+//  var imgText = document.getElementById("imgtext");
+//  expandImg.src = imgs.src;
+//  imgText.innerHTML = imgs.alt;
+//  expandImg.parentElement.style.display = "block";
+//}
+
+function myFunction(imgs) {
+  var containerId;
+
+  // Determine which container to use based on the image's source path or gallery
+  if (imgs.src.includes("Norway")) {
+    containerId = "norwaycontainer";
+  } else if (imgs.src.includes("Italy")) {
+    containerId = "italycontainer";
+  }
+
+  var container = document.getElementById(containerId);
+  var expandImg = container.querySelector("#expandedImg");
+  var imgText = container.querySelector("#imgtext");
+
   expandImg.src = imgs.src;
   imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
+  container.style.display = "block";
 }
 
     </script>
@@ -434,8 +453,6 @@
   <h2 id="italy" class="gallery-title">Italy</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
 </div>
-
-<br><br>
 
 <!-- The four columns -->
 <div class="row2">
