@@ -1,22 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* Navigation Bar */
-
-/*#home {
-    background-color:  darkblue;
-    padding-bottom: 1cm;
-    margin-left:-1cm;
-    margin-right:-1cm;
-    margin-top:-1cm;
-    padding-top: 2cm;
-    padding-bottom: 2cm;
-    height: 5mm;
-   }
-    */
     #home {
       background-color: darkblue;
       padding: 1cm;
-      margin: 0;
+      margin: 10px;
       height: auto;
   }
   
@@ -115,48 +103,7 @@
 section {
   width: 100%;
 }
-  /*
-  .topmenu {
-    color: lightgray;
-    margin: 10px;
-    padding: 20px;
-    font-size: 20px;
-    text-decoration:none;
-  }
-  
-  .topmenu:hover {
-    color: white;
-    font-weight: bolder;
-    text-decoration: underline;
-  }
-  
-  .topdiv {
-    float: right;
-    padding-right: 1cm;
-  }
-  
-  .profile_name {
-      color: lightgray;
-      font-size: 30px;
-      float: left;
-      padding-left: 2cm;
-  }
-  
-  .profile_name .contact_info {
-    font-size: 15px;
-    font-style: italic;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
-  
-  .contact_info img {
-    width:25px;
-    margin-right: 10px;
-    float:left;
-  }
-  */
-
+ 
   /* Titles */
   
   h2 {
