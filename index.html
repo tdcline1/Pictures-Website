@@ -241,6 +241,8 @@ function myFunction(imgs) {
     containerId = "francecontainer";
   } else if (imgs.src.includes("Spain")) {
     containerId = "spaincontainer";
+  } else if (imgs.src.includes("Finland")) {
+    containerId = "finlandcontainer";
   }
   var container = document.getElementById(containerId);
   var expandImg = container.querySelector("#expandedImg");
@@ -629,6 +631,34 @@ function myFunction(imgs) {
 </div>
 
 <div id="spaincontainer" class="container2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+ <!-- Finland Gallery -->
+ <div class="gallery-header" style="text-align:center; clear: both;">
+  <h2 id="spain" class="gallery-title">Finland</h2>
+  <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row2">
+  <div class="column2">
+    <img src="Reference Pictures/Finland/beach.jpg" alt="100's of miles of beachy coastline" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Finland/sauna.jpg" alt="1 sauna for every 3 people in Finland" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Finland/st nicks.jpg" alt="St Nick's Russian Orthodox Cathedral, remnants of russian empire." style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Finland/main sq.jpg" alt="Helsinki" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div id="finlandcontainer" class="container2">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
