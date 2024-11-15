@@ -245,6 +245,8 @@ function myFunction(imgs) {
     containerId = "finlandcontainer";
   } else if (imgs.src.includes("Appenzell")) {
     containerId = "appenzellcontainer";
+  } else if (imgs.src.includes("Jungfrau")) {
+    containerId = "jungfraucontainer";
   }
 
 
@@ -666,6 +668,34 @@ function myFunction(imgs) {
 </div>
 
 <div id="finlandcontainer" class="container2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+ <!-- Jungfrau Gallery -->
+ <div class="gallery-header" style="text-align:center; clear: both;">
+  <h2 id="appenzell" class="gallery-title">Jungfrau Region, Switzerland</h2>
+  <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row2">
+  <div class="column2">
+    <img src="Reference Pictures/Jungfrau/Schilthorn.jpg" alt="View from Schilthorn Peak" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Jungfrau/Fondue.jpg" alt="Swiss cheese Fondue Yum!" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Jungfrau/boat.jpg" alt="Lake Lucerne" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Jungfrau/Aletsch.jpg" alt="Aletsch Glacier- largest glacier in europe" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div id="jungfraucontainer" class="container2">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
