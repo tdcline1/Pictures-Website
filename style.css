@@ -4,7 +4,7 @@
     #home {
       background-color: darkblue;
       padding: 1cm;
-      margin: 10px;
+      margin: 0px;
       height: auto;
   }
   
@@ -13,6 +13,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      padding-bottom: 10px;
   }
   
   .topmenu {
