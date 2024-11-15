@@ -249,6 +249,8 @@ function myFunction(imgs) {
     containerId = "jungfraucontainer";
   } else if (imgs.src.includes("Florence")) {
     containerId = "florencecontainer";
+  } else if (imgs.src.includes("Edinburgh")) {
+    containerId = "edinburghcontainer";
   }
 
 
@@ -759,6 +761,35 @@ function myFunction(imgs) {
 </div>
 
 <div id="appenzellcontainer" class="container2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+
+ <!-- Edinburgh Gallery -->
+ <div class="gallery-header" style="text-align:center; clear: both;">
+  <h2 id="edinburgh" class="gallery-title">Edinburgh, Scotland</h2>
+  <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row2">
+  <div class="column2">
+    <img src="Reference Pictures/Edinburgh/cathedral.jpg" alt="Edinburgh Cathedral" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Edinburgh/edinburgh skyline.jpg" alt="Edinburgh skyline" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Edinburgh/storr.jpg" alt="Old Man of Storr, Isle of Skye" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Edinburgh/conehead.jpg" alt="Duke of Wellington, classic Scottish humor" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div id="edinburghcontainer" class="container2">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
