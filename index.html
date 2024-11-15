@@ -237,6 +237,8 @@ function myFunction(imgs) {
     containerId = "altavia1container";
   } else if (imgs.src.includes("TourDuMtBlanc")) {
     containerId = "tourdumtblanccontainer";
+  } else if (imgs.src.includes("France")) {
+    containerId = "francecontainer";
   }
 
   var container = document.getElementById(containerId);
@@ -559,6 +561,34 @@ function myFunction(imgs) {
 </div>
 
 <div id="englandcontainer" class="container2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+ <!-- France Gallery -->
+ <div class="gallery-header" style="text-align:center; clear: both;">
+  <h2 id="france" class="gallery-title">France</h2>
+  <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row2">
+  <div class="column2">
+    <img src="Reference Pictures/France/Chapelle.jpg" alt="Sainte-Chapelle" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/England/wales castle.jpg" alt="Welsh Castle 1300s" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/England/hs2.jpg" alt="My former job- high speed rail bridge construction engineering" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/France/Frenchriviera.jpg" alt="French Riviera- View over Villefranche" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div id="francecontainer" class="container2">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
