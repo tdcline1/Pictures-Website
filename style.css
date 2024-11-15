@@ -156,6 +156,7 @@ section {
 }
 
 .about-me-text {
+  Color: darkblue
   flex: 2;
   max-width: 34%;
   padding: 20px;
