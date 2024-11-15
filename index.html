@@ -243,7 +243,11 @@ function myFunction(imgs) {
     containerId = "spaincontainer";
   } else if (imgs.src.includes("Finland")) {
     containerId = "finlandcontainer";
+  } else if (imgs.src.includes("Appenzell")) {
+    containerId = "appenzellcontainer";
   }
+
+
   var container = document.getElementById(containerId);
   var expandImg = container.querySelector("#expandedImg");
   var imgText = container.querySelector("#imgtext");
@@ -662,6 +666,34 @@ function myFunction(imgs) {
 </div>
 
 <div id="finlandcontainer" class="container2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+ <!-- Appenzell Gallery -->
+ <div class="gallery-header" style="text-align:center; clear: both;">
+  <h2 id="appenzell" class="gallery-title">Appenzel, Switzerland</h2>
+  <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row2">
+  <div class="column2">
+    <img src="Reference Pictures/Appenzell/valley pic.jpg" alt="Ebenalp Valley" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Appenzell/seealpsee.jpg" alt="Seealpsee (lake Mountain Lake)" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Appenzell/aescher.jpg" alt="Aescher Cliffside Guesthouse" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Reference Pictures/Appenzell/saxer.jpg" alt="Saxer Lucke Rock Formation" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div id="appenzellcontainer" class="container2">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
