@@ -378,3 +378,10 @@ path:hover {
   margin: 10px auto; /* Center the section and add spacing around it */
   max-width: 1200px; /* Optional: Limit the width of the bordered section */
 }
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
