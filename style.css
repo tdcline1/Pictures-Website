@@ -100,6 +100,10 @@
           padding-left: 0;
           text-align: center;
       }
+
+      .imgtext {
+          font-size: 24px; /* Smaller font size for mobile */
+      }
   }
 section {
   width: 100%;
