@@ -371,3 +371,10 @@ path:hover {
   color: gray;            /* Optional: differentiate color */
   margin-top: 5px;        /* Space between title and description */
 }
+
+.bordered-section {
+  border: 2px solid black; /* Adjust thickness and color as needed */
+  padding: 10px; /* Add spacing inside the border */
+  margin: 10px auto; /* Center the section and add spacing around it */
+  max-width: 1200px; /* Optional: Limit the width of the bordered section */
+}
