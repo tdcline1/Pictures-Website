@@ -232,6 +232,8 @@ function myFunction(imgs) {
     containerId = "viennacontainer";
   } else if (imgs.src.includes("Turkey")) {
     containerId = "turkeycontainer";
+  } else if (imgs.src.includes("Greece")) {
+    containerId = "greececontainer";
   }
 
 
@@ -902,6 +904,34 @@ function myFunction(imgs) {
   <div id="imgtext"></div>
 </div>
 </div>
+
+<!-- Greece Gallery -->
+<div class="bordered-section">
+  <div class="gallery-header" style="text-align:center; clear: both;">
+   <h2 id="greece" class="gallery-title">Greece</h2>
+   <p class="gallery-description">5000 years of history and incredible natural beauty. Click to enlarge a photo:</p>
+ </div>
+ <!-- The four columns -->
+ <div class="row2">
+   <div class="column2">
+     <img src="Reference Pictures/Greece/athens.jpg" loading="lazy" alt="View of the Acropolis and Athens main square" style="width:100%" onclick="myFunction(this);">
+   </div>
+   <div class="column2">
+     <img src="Reference Pictures/Greece/Monastery.jpg" loading="lazy" alt="Cliffside monasteries of Meteora" style="width:100%" onclick="myFunction(this);">
+   </div>
+   <div class="column2">
+     <img src="Reference Pictures/Greece/Santorini.jpg" loading="lazy" alt="Santorini" style="width:100%" onclick="myFunction(this);">
+   </div>
+   <div class="column2">
+     <img src="Reference Pictures/Greece/Cape Sunio.jpg" loading="lazy" alt="Cape Sounion at sunset" style="width:100%" onclick="myFunction(this);">
+   </div>
+ </div>
+ <div id="greececontainer" class="container2" style="text-align:center">
+   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+   <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
+   <div id="imgtext"></div>
+ </div>
+ </div>
 
 </body>
 
