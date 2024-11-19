@@ -480,6 +480,7 @@ function myFunction(imgs) {
 
 <!-- start of individual picture galleries-->
   <!-- Tour Du mt blanc-->
+  <div class="bordered-section">
 <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="tourdumtblanc" class="gallery-title">Tour Du Mt Blanc- Chamonix, France</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -504,8 +505,10 @@ function myFunction(imgs) {
   <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
   <div id="imgtext"></div>
 </div>
+</div>
 
  <!-- Norway-->
+ <div class="bordered-section">
 <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="norway" class="gallery-title">Norway</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -530,38 +533,41 @@ function myFunction(imgs) {
   <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
   <div id="imgtext"></div>
 </div>
+</div>
 
 
 
  <!-- Italy gallery-->
  <div class="bordered-section">
-<div class="gallery-header" style="text-align:center; clear: both;">
-  <h2 id="italy" class="gallery-title">Italy</h2>
-  <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
-</div>
-<!-- The four columns -->
-<div class="row2">
-  <div class="column2">
-    <img src="Reference Pictures/Italy/Cinque Terre.jpg" loading="lazy" alt="Cinque Terre" style="width:100%" onclick="myFunction(this);">
+  <div class="gallery-header" style="text-align:center; clear: both;">
+    <h2 id="italy" class="gallery-title">Italy</h2>
+    <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
   </div>
-  <div class="column2">
-    <img src="Reference Pictures/Italy/Roman Forum.jpg" loading="lazy" alt="Roman Forum" style="width:100%" onclick="myFunction(this);">
+  <!-- The four columns -->
+  <div class="row2">
+    <div class="column2">
+      <img src="Reference Pictures/Italy/Cinque Terre.jpg" loading="lazy" alt="Cinque Terre" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column2">
+      <img src="Reference Pictures/Italy/Roman Forum.jpg" loading="lazy" alt="Roman Forum" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column2">
+      <img src="Reference Pictures/Italy/St Marks.jpg" loading="lazy" alt="St. Marks Cathedral, Venice" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column2">
+      <img src="Reference Pictures/Italy/Florence Cathedral.jpg" loading="lazy" alt="Florence Duomo" style="width:100%" onclick="myFunction(this);">
+    </div>
   </div>
-  <div class="column2">
-    <img src="Reference Pictures/Italy/St Marks.jpg" loading="lazy" alt="St. Marks Cathedral, Venice" style="width:100%" onclick="myFunction(this);">
+  <div id="italycontainer" class="container2" style="text-align:center">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;>
+    <div id="imgtext"></div>
   </div>
-  <div class="column2">
-    <img src="Reference Pictures/Italy/Florence Cathedral.jpg" loading="lazy" alt="Florence Duomo" style="width:100%" onclick="myFunction(this);">
-  </div>
-</div>
-<div id="italycontainer" class="container2" style="text-align:center">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;>
-  <div id="imgtext"></div>
 </div>
 </div>
 
  <!-- Florence gallery-->
+ <div class="bordered-section">
  <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="florence" class="gallery-title">Florence, Italy</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -586,8 +592,10 @@ function myFunction(imgs) {
   <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
   <div id="imgtext"></div>
 </div>
+</div>
 
  <!-- Alta Via 1 -->
+ <div class="bordered-section">
  <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="italy" class="gallery-title">Alta Via 1- Italian Dolomites</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -612,8 +620,10 @@ function myFunction(imgs) {
   <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
   <div id="imgtext"></div>
 </div>
+</div>
 
  <!-- England Gallery -->
+ <div class="bordered-section">
  <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="italy" class="gallery-title">England</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -638,8 +648,10 @@ function myFunction(imgs) {
   <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
   <div id="imgtext"></div>
 </div>
+</div>
 
  <!-- France Gallery -->
+ <div class="bordered-section">
  <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="france" class="gallery-title">France</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -664,8 +676,10 @@ function myFunction(imgs) {
   <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
   <div id="imgtext"></div>
 </div>
+</div>
 
  <!-- Spain Gallery -->
+ <div class="bordered-section">
  <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="spain" class="gallery-title">Spain</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -690,8 +704,10 @@ function myFunction(imgs) {
   <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
   <div id="imgtext"></div>
 </div>
+</div>
 
  <!-- Finland Gallery -->
+ <div class="bordered-section">
  <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="finland" class="gallery-title">Finland</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -716,8 +732,10 @@ function myFunction(imgs) {
   <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
   <div id="imgtext"></div>
 </div>
+</div>
 
  <!-- Jungfrau Gallery -->
+ <div class="bordered-section">
  <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="jungfrau" class="gallery-title">Jungfrau Region, Switzerland</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -742,8 +760,10 @@ function myFunction(imgs) {
   <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
   <div id="imgtext"></div>
 </div>
+</div>
 
  <!-- Appenzell Gallery -->
+ <div class="bordered-section">
  <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="appenzell" class="gallery-title">Appenzel, Switzerland</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -768,9 +788,11 @@ function myFunction(imgs) {
   <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
   <div id="imgtext"></div>
 </div>
+</div>
 
 
  <!-- Edinburgh Gallery -->
+ <div class="bordered-section">
  <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="edinburgh" class="gallery-title">Edinburgh, Scotland</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -795,9 +817,11 @@ function myFunction(imgs) {
   <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
   <div id="imgtext"></div>
 </div>
+</div>
 
 
  <!-- Berlin Gallery -->
+ <div class="bordered-section">
  <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="berlin" class="gallery-title">Berlin, Germany</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -822,8 +846,10 @@ function myFunction(imgs) {
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
 </div>
+</div>
 
  <!-- Vienna Gallery -->
+ <div class="bordered-section">
  <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="vienna" class="gallery-title">Vienna, Austria</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -848,8 +874,10 @@ function myFunction(imgs) {
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
 </div>
+</div>
 
  <!-- Turkey Gallery -->
+ <div class="bordered-section">
  <div class="gallery-header" style="text-align:center; clear: both;">
   <h2 id="turkey" class="gallery-title">Turkey</h2>
   <p class="gallery-description">Click on an image to see it in full screen with a description below:</p>
@@ -873,6 +901,7 @@ function myFunction(imgs) {
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
+</div>
 </div>
 
 </body>
