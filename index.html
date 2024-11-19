@@ -235,7 +235,9 @@ function myFunction(imgs) {
   } else if (imgs.src.includes("Greece")) {
     containerId = "greececontainer";
   }
-
+  else if (imgs.src.includes("Baltics")) {
+    containerId = "balticscontainer";
+  }
 
   var container = document.getElementById(containerId);
   var expandImg = container.querySelector("#expandedImg");
@@ -926,6 +928,34 @@ function myFunction(imgs) {
    </div>
  </div>
  <div id="greececontainer" class="container2" style="text-align:center">
+   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+   <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
+   <div id="imgtext"></div>
+ </div>
+ </div>
+
+<!-- Baltics Gallery -->
+<div class="bordered-section">
+  <div class="gallery-header" style="text-align:center; clear: both;">
+   <h2 id="baltics" class="gallery-title">Baltics</h2>
+   <p class="gallery-description">Underated visits, extremely livable cites, friendly people. Vilnius, Lithuania, Riga, Latvia and Tallin Estonia:</p>
+ </div>
+ <!-- The four columns -->
+ <div class="row2">
+   <div class="column2">
+     <img src="Reference Pictures/Baltics/Vilnius Skyline.jpg" loading="lazy" alt="Vilnius skyline" style="width:100%" onclick="myFunction(this);">
+   </div>
+   <div class="column2">
+     <img src="Reference Pictures/Baltics/Talin Main Square.jpg" loading="lazy" alt="Tallin main square" style="width:100%" onclick="myFunction(this);">
+   </div>
+   <div class="column2">
+     <img src="Reference Pictures/Baltics/Riga garden.jpg" loading="lazy" alt="Riga gardens" style="width:100%" onclick="myFunction(this);">
+   </div>
+   <div class="column2">
+     <img src="Reference Pictures/Baltics/gulag outfit.jpg" loading="lazy" alt="The Baltic states have a sad but fascinating relationship with the soviet union culminating in the baltic way of 1989." style="width:100%" onclick="myFunction(this);">
+   </div>
+ </div>
+ <div id="balticscontainer" class="container2" style="text-align:center">
    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
    <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
    <div id="imgtext"></div>
