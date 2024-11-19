@@ -362,7 +362,7 @@ path:hover {
   flex-direction: column; /* Stack items vertically */
   align-items: center;    /* Center-align the text */
   text-align: center;     /* Center-align text within each item */
-  margin-bottom: 20px;    /* Space below the whole header */
+  margin-bottom: 10px;    /* Space below the whole header */
 }
 
 .gallery-title {
