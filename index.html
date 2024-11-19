@@ -253,8 +253,10 @@ function myFunction(imgs) {
     containerId = "denmarkcontainer";
   } else if (imgs.src.includes("Netherlands")) {
     containerId = "netherlandscontainer";
-  } else if (imgs.src.includes("portugal")) {
+  } else if (imgs.src.includes("Portugal")) {
     containerId = "portugalcontainer";
+  } else if (imgs.src.includes("Zillertal")) {
+    containerId = "zillertalcontainer";
   }
 
   var container = document.getElementById(containerId);
@@ -612,6 +614,34 @@ function myFunction(imgs) {
    <div id="imgtext"></div>
  </div>
  </div>
+
+   <!-- Zillertal Gallery -->
+   <div class="bordered-section">
+    <div class="gallery-header" style="text-align:center; clear: both;">
+     <h2 id="zillertal" class="gallery-title">Zillertal, Austria</h2>
+     <p class="gallery-description">Spectacular lesser known hiking region with a humble, life-loving culture. Click to enlarge a photo:</p>
+   </div>
+   <!-- The four columns -->
+   <div class="row2">
+     <div class="column2">
+       <img src="Reference Pictures/Zillertal/mtns.jpg" loading="lazy" alt="Zillertal Alps" style="width:100%" onclick="myFunction(this);">
+     </div>
+     <div class="column2">
+       <img src="Reference Pictures/Zillertal/olperer.jpg" loading="lazy" alt="Hike to Olperer Hutte" style="width:100%" onclick="myFunction(this);">
+     </div>
+     <div class="column2">
+       <img src="Reference Pictures/Zillertal/mayr.jpg" loading="lazy" alt="Mayrhofen, 'capital' of Zillertal" style="width:100%" onclick="myFunction(this);">
+     </div>
+     <div class="column2">
+       <img src="Reference Pictures/Zillertal/giant.jpg" loading="lazy" alt="Hiking inside a glacier" style="width:100%" onclick="myFunction(this);">
+     </div>
+   </div>
+   <div id="zillertalcontainer" class="container2" style="text-align:center">
+     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+     <img id="expandedImg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
+     <div id="imgtext"></div>
+   </div>
+   </div>
  
   <!-- Turkey Gallery -->
   <div class="bordered-section">
