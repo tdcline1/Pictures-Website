@@ -32,17 +32,53 @@
         padding: 20px;
       }
   
-      /* Create two equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        text-align: center;
-      }
-      
-      .column img {
-        margin-top: 12px;
-      }
+      /*implement chatgpt to make the fav hikes and fav cities two columns*/
+      /* Parent container to hold hikes and cities */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between sections */
+  justify-content: space-between;
+}
+
+/* Style for each section's columns */
+.section {
+  flex: 1 1 48%; /* Each section takes about half the width */
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap */
+  gap: 10px; /* Add space between items in the section */
+  box-sizing: border-box;
+}
+
+/* Style for individual items inside sections */
+.column {
+  flex: 1 1 48%; /* Each column within the section takes half the section's width */
+  box-sizing: border-box;
+}
+
+.column img {
+  width: 100%; /* Ensure images fit their container */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 12px;
+  border: 2px solid darkblue;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Responsive design: stack all sections on mobile */
+@media (max-width: 768px) {
+  .grid-container {
+    flex-direction: column;
+  }
+
+  .section {
+    flex: 1 1 100%; /* Each section takes full width on smaller screens */
+  }
+
+  .column {
+    flex: 1 1 100%; /* Stack all items within the section */
+  }
+}
       
       /* Clear floats after the columns */
       .row:after {
@@ -542,77 +578,63 @@ document.addEventListener("scroll", function () {
 
   <hr style="height: 2px; background-color: #3498db;">
 
-    <h1 id="top-five-hikes" style="color: darkblue;"><u>Five Favorite Hikes</u></h1>
-    <p style="text-align:center">Click to see my favorite pictures:</p>
-    <div class="row">
+  <div class="grid-container">
+    <!-- Favorite Hikes Section -->
+    <div class="section">
       <div class="column">
-
-        <a href="#tourdumtblanc" style="display: block; border: 2px solid darkblue; border-radius: 10px; padding: 10px; text-align: center;">
-          <img src="Top Five Hikes/Chamonix.jpg" loading="lazy" style="width:100%">
-            <p>1. Tour Du Mont Blanc- Chamonix, France</p>
+        <a href="#tourdumtblanc">
+          <img src="Top Five Hikes/Chamonix.jpg" loading="lazy">
+          <p>1. Tour Du Mont Blanc- Chamonix, France</p>
         </a>
-
-        <a href="#norway" style="display: block; border: 2px solid darkblue; border-radius: 10px; padding: 10px; text-align: center;">
-          <img src="Top Five Hikes/Romsdalseggen.jpg" loading="lazy" style="width:100%">
-            <p>2. Norway</p>
+        <a href="#norway">
+          <img src="Top Five Hikes/Romsdalseggen.jpg" loading="lazy">
+          <p>2. Norway</p>
         </a>
-
-        <a href="#jungfrau" style="display: block; border: 2px solid darkblue; border-radius: 10px; padding: 10px; text-align: center;">
-          <img src="Top Five Hikes/Aletsch.jpg" loading="lazy" style="width:100%">
-            <p>3. Jungfrau Region, Switzerland</p>
+        <a href="#jungfrau">
+          <img src="Top Five Hikes/Aletsch.jpg" loading="lazy">
+          <p>3. Jungfrau Region, Switzerland</p>
         </a>
-
       </div>
       <div class="column">
-
-        <a href="#altavia1" style="display: block; border: 2px solid darkblue; border-radius: 10px; padding: 10px; text-align: center;">
-          <img src="Top Five Hikes/dolomites jpg.jpg" loading="lazy" style="width:100%">
-            <p>4. Alta Via 1 Trail- Italian Dolomites</p>
+        <a href="#altavia1">
+          <img src="Top Five Hikes/dolomites jpg.jpg" loading="lazy">
+          <p>4. Alta Via 1 Trail- Italian Dolomites</p>
         </a>
-
-        <a href="#appenzell" style="display: block; border: 2px solid darkblue; border-radius: 10px; padding: 10px; text-align: center;">
-          <img src="Top Five Hikes/saxer me jpg.jpg" loading="lazy" style="width:100%">
-            <p>5. Appenzel, Switzerland</p>
+        <a href="#appenzell">
+          <img src="Top Five Hikes/saxer me jpg.jpg" loading="lazy">
+          <p>5. Appenzel, Switzerland</p>
         </a>
-
       </div>
     </div>
-
-    <br>
-    <h1 id="top-five-cities" style="color: darkblue;"><u>Five Favorite Cities</u></h1>
-    <p style="text-align:center">Click to be brought to a gallery of my favorite pictures:</p>
-
-    <div class="row">
+  
+    <!-- Favorite Cities Section -->
+    <div class="section">
       <div class="column">
-        <a href="#florence"style="display: block; border: 2px solid darkblue; border-radius: 10px; padding: 10px; text-align: center;">
-          <img src="Top 5 Cities/Florence Cathedral.jpg" loading="lazy" style="width:100%">
+        <a href="#florence">
+          <img src="Top 5 Cities/Florence Cathedral.jpg" loading="lazy">
           <p>1. Florence, Italy</p>
         </a>
-
-        <a href="#edinburgh"style="display: block; border: 2px solid darkblue; border-radius: 10px; padding: 10px; text-align: center;">
-          <img src="Top 5 Cities/Edinburgh Cathedral.jpg" loading="lazy" style="width:100%">
+        <a href="#edinburgh">
+          <img src="Top 5 Cities/Edinburgh Cathedral.jpg" loading="lazy">
           <p>2. Edinburgh, Scotland</p>
         </a>
-
-        <a href="#berlin" style="display: block; border: 2px solid darkblue; border-radius: 10px; padding: 10px; text-align: center;">
-          <img src="Top 5 Cities/Currywurst.jpg" loading="lazy" style="width:100%">
+        <a href="#berlin">
+          <img src="Top 5 Cities/Currywurst.jpg" loading="lazy">
           <p>3. Berlin, Germany</p>
         </a>
-
       </div>
       <div class="column">
-        <a href="#france" style="display: block; border: 2px solid darkblue; border-radius: 10px; padding: 10px; text-align: center;">
-          <img src="Top 5 Cities/Eiffel.jpg" loading="lazy" style="width:100%">
+        <a href="#france">
+          <img src="Top 5 Cities/Eiffel.jpg" loading="lazy">
           <p>4. Paris, France</p>
         </a>
-
-      <a href="#vienna" style="display: block; border: 2px solid darkblue; border-radius: 10px; padding: 10px; text-align: center;">
-          <img src="Top 5 Cities/hofburg me jpg.jpg" loading="lazy" style="width:100%">
+        <a href="#vienna">
+          <img src="Top 5 Cities/hofburg me jpg.jpg" loading="lazy">
           <p>5. Vienna, Austria</p>
-      </a>
-
+        </a>
       </div>
     </div>
+  </div>
 
     <!--go to top button-->
     <div id="go-to-top" class="iconbutton" title="Go to Top">
