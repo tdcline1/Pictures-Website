@@ -34,36 +34,13 @@
   
       /*implement chatgpt to make the fav hikes and fav cities two columns*/
       /* Parent container to hold hikes and cities */
-.grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Space between sections */
-  justify-content: space-between;
+/* Centered Header and Description for Each Section */
+.section-header {
+  text-align: center;
+  margin-bottom: 20px; /* Space below the header */
 }
 
-/* Style for each section's columns */
-.section {
-  flex: 1 1 48%; /* Each section takes about half the width */
-  display: flex;
-  flex-wrap: wrap; /* Allow content to wrap */
-  gap: 10px; /* Add space between items in the section */
-  box-sizing: border-box;
-}
-
-/* Style for individual items inside sections */
-.column {
-  flex: 1 1 48%; /* Each column within the section takes half the section's width */
-  box-sizing: border-box;
-}
-
-.column img {
-  width: 100%; /* Ensure images fit their container */
-  height: auto; /* Maintain aspect ratio */
-  margin-top: 12px;
-  border: 2px solid darkblue;
-  border-radius: 10px;
-  padding: 10px;
-}
+.sectio
 
 /* Responsive design: stack all sections on mobile */
 @media (max-width: 768px) {
@@ -577,64 +554,77 @@ document.addEventListener("scroll", function () {
   </div>
 
   <hr style="height: 2px; background-color: #3498db;">
+<!-- Header and Description for the "Five Favorite Hikes" Section -->
+<div class="section-header">
+  <h2 class="section-title">Five Favorite Hikes</h2>
+  <p class="section-description">Discover the breathtaking hikes I've experienced across Europe. Click on the images to view my favorite photos!</p>
+</div>
 
-  <div class="grid-container">
-    <!-- Favorite Hikes Section -->
-    <div class="section">
-      <div class="column">
-        <a href="#tourdumtblanc">
-          <img src="Top Five Hikes/Chamonix.jpg" loading="lazy">
-          <p>1. Tour Du Mont Blanc- Chamonix, France</p>
-        </a>
-        <a href="#norway">
-          <img src="Top Five Hikes/Romsdalseggen.jpg" loading="lazy">
-          <p>2. Norway</p>
-        </a>
-        <a href="#jungfrau">
-          <img src="Top Five Hikes/Aletsch.jpg" loading="lazy">
-          <p>3. Jungfrau Region, Switzerland</p>
-        </a>
-      </div>
-      <div class="column">
-        <a href="#altavia1">
-          <img src="Top Five Hikes/dolomites jpg.jpg" loading="lazy">
-          <p>4. Alta Via 1 Trail- Italian Dolomites</p>
-        </a>
-        <a href="#appenzell">
-          <img src="Top Five Hikes/saxer me jpg.jpg" loading="lazy">
-          <p>5. Appenzel, Switzerland</p>
-        </a>
-      </div>
+<!-- Favorite Hikes Section -->
+<div class="grid-container">
+  <div class="section">
+    <div class="column">
+      <a href="#tourdumtblanc">
+        <img src="Top Five Hikes/Chamonix.jpg" loading="lazy">
+        <p>1. Tour Du Mont Blanc- Chamonix, France</p>
+      </a>
+      <a href="#norway">
+        <img src="Top Five Hikes/Romsdalseggen.jpg" loading="lazy">
+        <p>2. Norway</p>
+      </a>
+      <a href="#jungfrau">
+        <img src="Top Five Hikes/Aletsch.jpg" loading="lazy">
+        <p>3. Jungfrau Region, Switzerland</p>
+      </a>
     </div>
-  
-    <!-- Favorite Cities Section -->
-    <div class="section">
-      <div class="column">
-        <a href="#florence">
-          <img src="Top 5 Cities/Florence Cathedral.jpg" loading="lazy">
-          <p>1. Florence, Italy</p>
-        </a>
-        <a href="#edinburgh">
-          <img src="Top 5 Cities/Edinburgh Cathedral.jpg" loading="lazy">
-          <p>2. Edinburgh, Scotland</p>
-        </a>
-        <a href="#berlin">
-          <img src="Top 5 Cities/Currywurst.jpg" loading="lazy">
-          <p>3. Berlin, Germany</p>
-        </a>
-      </div>
-      <div class="column">
-        <a href="#france">
-          <img src="Top 5 Cities/Eiffel.jpg" loading="lazy">
-          <p>4. Paris, France</p>
-        </a>
-        <a href="#vienna">
-          <img src="Top 5 Cities/hofburg me jpg.jpg" loading="lazy">
-          <p>5. Vienna, Austria</p>
-        </a>
-      </div>
+    <div class="column">
+      <a href="#altavia1">
+        <img src="Top Five Hikes/dolomites jpg.jpg" loading="lazy">
+        <p>4. Alta Via 1 Trail- Italian Dolomites</p>
+      </a>
+      <a href="#appenzell">
+        <img src="Top Five Hikes/saxer me jpg.jpg" loading="lazy">
+        <p>5. Appenzel, Switzerland</p>
+      </a>
     </div>
   </div>
+</div>
+
+<!-- Header and Description for the "Five Favorite Cities" Section -->
+<div class="section-header">
+  <h2 class="section-title">Five Favorite Cities</h2>
+  <p class="section-description">Explore the most vibrant cities I’ve visited. Click to see a gallery of my favorite moments from each place!</p>
+</div>
+
+<!-- Favorite Cities Section -->
+<div class="grid-container">
+  <div class="section">
+    <div class="column">
+      <a href="#florence">
+        <img src="Top 5 Cities/Florence Cathedral.jpg" loading="lazy">
+        <p>1. Florence, Italy</p>
+      </a>
+      <a href="#edinburgh">
+        <img src="Top 5 Cities/Edinburgh Cathedral.jpg" loading="lazy">
+        <p>2. Edinburgh, Scotland</p>
+      </a>
+      <a href="#berlin">
+        <img src="Top 5 Cities/Currywurst.jpg" loading="lazy">
+        <p>3. Berlin, Germany</p>
+      </a>
+    </div>
+    <div class="column">
+      <a href="#france">
+        <img src="Top 5 Cities/Eiffel.jpg" loading="lazy">
+        <p>4. Paris, France</p>
+      </a>
+      <a href="#vienna">
+        <img src="Top 5 Cities/hofburg me jpg.jpg" loading="lazy">
+        <p>5. Vienna, Austria</p>
+      </a>
+    </div>
+  </div>
+</div>
 
     <!--go to top button-->
     <div id="go-to-top" class="iconbutton" title="Go to Top">
