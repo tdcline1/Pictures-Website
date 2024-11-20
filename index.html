@@ -40,7 +40,49 @@
   margin-bottom: 20px; /* Space below the header */
 }
 
-.sectio
+.section-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: darkblue;
+  margin: 0;
+}
+
+.section-description {
+  font-size: 1.2em;
+  color: gray;
+  margin-top: 5px;
+}
+
+/* Create the two columns for each section */
+.grid-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Vertical dividing line between the two sections */
+.grid-container > .column:nth-child(1) {
+  border-right: 2px solid darkblue; /* Add border to the right of the first column */
+}
+
+/* Image and paragraph styling */
+.column img {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.column p {
+  font-size: 1.1em;
+  color: darkblue;
+  margin-top: 10px;
+}
 
 /* Responsive design: stack all sections on mobile */
 @media (max-width: 768px) {
