@@ -166,7 +166,14 @@ section {
   max-width: 34%;
   padding: 20px;
   text-align: center;
-  margin-top: -70px; /* Adjust the value as needed */
+  margin-top: -100px; /* Adjust the value as needed */
+}
+
+/* Adjust margin for smaller screens */
+@media (max-width: 768px) {
+  .about-me-text {
+    margin-top: 0; /* Reset or reduce margin for mobile */
+  }
 }
 
 .about-me-image img {
