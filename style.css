@@ -438,3 +438,12 @@ footer {
       width:calc(50% - 1rem);
   }
 }
+
+/*favorite images list*/
+.fav-image {
+  width: 40%;
+  float: right;
+  padding: 0;
+  margin: 0 0 10px 10px; /* Add space between text and image */
+  vertical-align: top; /* Align image to the top of its container */
+}
