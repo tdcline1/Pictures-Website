@@ -161,11 +161,12 @@ section {
 }
 
 .about-me-text {
-  Color: darkblue
+  Color: darkblue;
   flex: 2;
   max-width: 34%;
   padding: 20px;
   text-align: center;
+  margin-top: -10px; /* Adjust the value as needed */
 }
 
 .about-me-image img {
