@@ -47,7 +47,9 @@
   display: flex;
   flex-wrap: wrap; /* Allow content to wrap */
   gap: 10px; /* Add space between items in the section */
-  box-sizing: border-box;
+  border: 2px solid darkblue;  /* Add border around each section */
+  border-radius: 10px;         /* Optional: adds rounded corners */
+  box-sizing: border-box;      /* Ensure padding doesn't affect width */
 }
 
 /* Style for individual items inside sections */
@@ -611,8 +613,8 @@ document.addEventListener("scroll", function () {
   
     <!-- Favorite Cities Section -->
     <div class="section">
-      <h1 id="top-five-cities" style="color: darkblue;"><u>Favorite hikes</u></h1>
-      <p style="text-align:center">Click to be brought to that hike's gallery:</p>
+      <h1 id="top-five-cities" style="color: darkblue;"><u>Favorite Cities</u></h1>
+      <p style="text-align:center">Click to be brought to that city's gallery:</p>
       <div class="column">
         <a href="#florence">
           <img src="Top 5 Cities/Florence Cathedral.jpg" loading="lazy">
