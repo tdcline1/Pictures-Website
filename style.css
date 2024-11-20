@@ -3,7 +3,7 @@
 /* Navigation Bar */
     #home {
       background-color: darkblue;
-      padding: 1.2cm;
+      padding: 1.3cm;
       margin: 0px;
       height: auto;
   }
@@ -116,7 +116,7 @@ section {
     font-size: 50px;
     text-align: center;
     float: left;
-    color: #004ebc;
+    color: darkblue;
     margin: 30px;
     margin-left: 60px;
     margin-top: 40px;
