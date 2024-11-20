@@ -159,7 +159,7 @@
     <!-- Map Section -->  
     <br>
     <h1 id="countries-i-have-visited" style="color: darkblue;"><u>Countries Visited</u></h1>
-    <p style="text-align:center">I visited all the blue countries! Click to see my favorite pictures:</p>
+    <p style="text-align:center">I visited all the blue countries! Click to be brought to that country's gallery:</p>
     <div id="details-box"></div>
 
     <!-- 
@@ -269,6 +269,22 @@ function myFunction(imgs) {
   imgText.innerHTML = imgs.alt;
   container.style.display = "block";
 }
+
+//go to top button emphasis
+document.addEventListener("scroll", function () {
+  const goToTopButton = document.getElementById("go-to-top");
+  const citiesSection = document.querySelector(".favorite-cities-section"); // Add the correct class or ID of your section
+
+  const citiesSectionPosition = citiesSection.getBoundingClientRect().top + window.scrollY;
+  const scrollPosition = window.scrollY;
+
+  // If the user scrolls past the cities section
+  if (scrollPosition > citiesSectionPosition) {
+    goToTopButton.classList.add("emphasized");
+  } else {
+    goToTopButton.classList.remove("emphasized");
+  }
+});
 
     </script>
 
@@ -597,7 +613,8 @@ function myFunction(imgs) {
       </div>
     </div>
 
-    <div class="iconbutton" title="Go to Top">
+    <!--go to top button-->
+    <div id="go-to-top" class="iconbutton" title="Go to Top">
       <a href="#home">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

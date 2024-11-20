@@ -447,3 +447,14 @@ footer {
   margin: 0 0 10px 10px; /* Add space between text and image */
   vertical-align: top; /* Align image to the top of its container */
 }
+
+/*go to top button emphasis*/
+#go-to-top {
+  transition: all 0.3s ease;
+}
+
+#go-to-top.emphasized {
+  background-color: yellow; /* Example: Change the background color */
+  transform: scale(1.2);    /* Example: Make it slightly larger */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
