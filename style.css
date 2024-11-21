@@ -243,18 +243,6 @@ path:hover {
     fill: orange !important;
 }
 
-/* establish starting size of map */
-/*
-#euro-map {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-*/
-
 /* changes location of state name from top left of map to box under cursor */
 #details-box {
     padding: 1rem;
