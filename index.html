@@ -72,14 +72,15 @@
 @media (max-width: 768px) {
   .grid-container {
     flex-direction: column;
+    gap: 10px; /* Reduce the gap between sections for smaller screens */
   }
 
   .section {
-    flex: 1 1 100%; /* Each section takes full width on smaller screens */
+    flex: 1 1 100%; /* Each section takes full width */
   }
 
   .column {
-    flex: 1 1 100%; /* Stack all items within the section */
+    flex: 1 1 48%; /* Maintain two columns within the section */
   }
 }
       
