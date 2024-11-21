@@ -43,20 +43,26 @@
 
 /* Style for each section's columns */
 .section {
-  flex: 1 1 48%; /* Each section takes about half the width */
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Horizontally center all children */
-  gap: 10px; /* Add space between items in the section */
-  border: 2px solid darkblue;  /* Add border around each section */
-  border-radius: 10px;         /* Optional: adds rounded corners */
-  box-sizing: border-box;      /* Ensure padding doesn't affect width */
-  text-align: center; /* Center text in each section */
+  flex: 1 1 100%; /* Each section takes the full width */
 }
 
-/* Style for individual items inside sections */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  text-align: center;
+  margin-bottom: 10px; /* Space between header and columns */
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap; /* Maintain the two-column layout */
+  gap: 10px;
+  justify-content: space-between;
+}
+
 .column {
-  flex: 1 1 48%; /* Each column within the section takes half the section's width */
+  flex: 1 1 48%; /* Each column takes about half the section's width */
   box-sizing: border-box;
   text-align: center; /* Center text inside the column */
 }
@@ -69,19 +75,14 @@
   border: none; /* Ensure no border around the images */
 }
 
-/* Responsive design: stack all sections on mobile */
+/* Responsive design: Maintain four total columns */
 @media (max-width: 768px) {
-  .grid-container {
+  .columns {
     flex-direction: column;
-    gap: 10px; /* Reduce the gap between sections for smaller screens */
-  }
-
-  .section {
-    flex: 1 1 100%; /* Each section takes full width */
   }
 
   .column {
-    flex: 1 1 48%; /* Maintain two columns within the section */
+    flex: 1 1 100%; /* Stack each column on smaller screens */
   }
 }
       
@@ -586,22 +587,13 @@ document.addEventListener("scroll", function () {
   <div class="grid-container">
     <!-- Favorite Hikes Section -->
     <div class="section">
-      <h1 id="top-five-hikes" style="color: darkblue; text-align: center; margin: 0; padding: 0;"><u>Favorite Hikes</u></h1><br>
+      <h1 id="top-five-hikes" style="color: darkblue; margin: 0; padding: 0;"><u>Favorite Hikes</u></h1><br>
       <p style="text-align:center">Click to be brought to that hike's gallery:</p>
+      <div class="columns">
       <div class="column">
         <a href="#tourdumtblanc">
           <img src="Top Five Hikes/Chamonix.jpg" loading="lazy">
           <p>1. Tour Du Mont Blanc- Chamonix, France</p>
-        </a>
-        <a href="#altavia1">
-          <img src="Top Five Hikes/dolomites jpg.jpg" loading="lazy">
-          <p>4. Alta Via 1 Trail- Italian Dolomites</p>
-        </a>
-      </div>
-      <div class="column">
-        <a href="#norway">
-          <img src="Top Five Hikes/Romsdalseggen.jpg" loading="lazy">
-          <p>2. Norway</p>
         </a>
         <a href="#jungfrau">
           <img src="Top Five Hikes/Aletsch.jpg" loading="lazy">
@@ -612,12 +604,24 @@ document.addEventListener("scroll", function () {
           <p>5. Appenzel, Switzerland</p>
         </a>
       </div>
+      <div class="column">
+        <a href="#norway">
+          <img src="Top Five Hikes/Romsdalseggen.jpg" loading="lazy">
+          <p>2. Norway</p>
+        </a>
+        <a href="#altavia1">
+          <img src="Top Five Hikes/dolomites jpg.jpg" loading="lazy">
+          <p>4. Alta Via 1 Trail- Italian Dolomites</p>
+        </a>
+      </div>
     </div>
+  </div>
   
     <!-- Favorite Cities Section -->
     <div class="section">
-      <h1 id="top-five-cities" style="color: darkblue; text-align: center; margin: 0; padding: 0;"><u>Favorite Cities</u></h1><br>
+      <h1 id="top-five-cities" style="color: darkblue; margin: 0; padding: 0;"><u>Favorite Cities</u></h1><br>
       <p style="text-align: center">Click to be brought to that city's gallery:</p>
+      <div class="columns">
       <div class="column">
         <a href="#florence">
           <img src="Top 5 Cities/Florence Cathedral.jpg" loading="lazy">
@@ -645,6 +649,7 @@ document.addEventListener("scroll", function () {
       </div>
     </div>
   </div>
+</div>
 
     <!--go to top button-->
     <div id="go-to-top" class="iconbutton" title="Go to Top">
