@@ -43,6 +43,13 @@
       display: flex;
       align-items: center;
       flex-direction: row;
+      gap: 8px; /* Adds spacing between the text and icons */
+  }
+
+  .profile_name .contact_info img {
+    height: 1em; /* Match icon height to the text size */
+    width: auto; /* Maintain the aspect ratio of the icons */
+    vertical-align: middle; /* Align icons with the text baseline */
   }
   
   /* Hamburger Menu */
